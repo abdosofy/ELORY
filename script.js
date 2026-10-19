@@ -12,6 +12,9 @@ function SearchHeader(){
 function navigationbtn(){
     location.href = "/PackgeProducts/products.html"
 }
+function SwitchAccount(){
+    location.href = "/logsign/index.html"
+}
 function LONGSLEEVED(){
     location.href = "/PackgeProducts/products.html#LONGSLEEVED"
 }
