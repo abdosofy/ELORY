@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    animation: change linear both;
+    animation-timeline: scroll();
+}
+@keyframes change {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.151);
+    }
+}
+header h2{
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 37px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-shadow: 6px 6px 20px white;
+}
+header nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 20px;
+}
+header li{
+    transition: 0.5s;
+}
+header li:hover{
+    transform: scale(1.2);
+}
+header a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.5s;
+}
+#changeBackGround{
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 4px 4px 20px white;
+    color: white;
+    text-shadow: 3px 3px 20px black;
+    border-radius: 20px;
+    padding: 7px;
+}
+header a:hover{
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 4px 4px 20px white;
+    color: white;
+    text-shadow: 3px 3px 20px black;
+    border-radius: 20px;
+    padding: 7px;
+}
+.header-icon{
+    display: flex;
+    gap: 19px;
+}
+.fa-magnifying-glass , .fa-user , .fa-bag-shopping{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fa-magnifying-glass:hover , .fa-user:hover , .fa-bag-shopping:hover{
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 4px 4px 40px white;
+    color: white;
+    text-shadow: 3px 3px 20px black;
+    border-radius: 30px;
+    padding: 12px;
+    transform: scale(1.2);
+}
+.hero-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+}
+.hero-nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 3px 30px white;
+    padding: 8px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.Secure , .Shipping , .Returns , .Guarantee{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: hero-nav 6s linear infinite;
+}
+.fa-lock , .fa-box , .fa-arrow-rotate-left , .fa-star{
+    font-size: 15px;
+    padding-top: 4px;
+}
+@keyframes hero-nav{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    25%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    26%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    75%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    76%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Search Input */
+#search {
+    display: none;
+    width: 600px;
+    padding: 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background-color: white;
+    color: #222;
+    font-size: 14px;
+    position: relative;
+    right: 90px;
+}
+
+#search.active {
+    display: block;
+}
+
+#search:focus {
+    border-color: #a68a64;
+    box-shadow: 0 0 5px #a68a64;
+}
+#cart-product button {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #222;
+    padding: 10px 24px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+#cart-product button:hover {
+    background-color: #222;
+    color: #fff;
+    border-color: #222;
+}

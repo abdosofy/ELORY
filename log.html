@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+        <div class="box-log">
+            <div class="title-log">
+                <h3>Welcome To Back</h3>
+                <h2>Log in to your account</h2>
+            </div>
+            <div class="sign">
+                <p>I don't have an account?</p>
+                <a href="indix.html">Sign Up</a>
+            </div>
+            <div class="inputs-log">
+                <input id="email-Log" class="email-log" type="email" placeholder="Enter Your Email" required>
+                <b id="errorEmail">Invalid email address</b>
+            </div>
+            <div class="box-pass">
+                <input id="password-log" class="pass-log" type="password" placeholder="Enter Your Password" required>
+                <button type="button" id="togglePassword2" onclick="ShowPass()">👁️</button>
+            </div>
+            <b id="errorPass">Incorrect password</b>
+            <div class="remeber">
+                <label>
+                    <input type="checkbox">Remeber Me?
+                    <a href="">Forget your password</a>
+                </label>
+            </div>
+            <div class="socail">
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.google.com/">Google</a>
+            </div>
+            <button class="btn-log" onclick="login()">Log in</button>
+        </div>
+    <script src="script2.js"></script>
+</body>
+</html>

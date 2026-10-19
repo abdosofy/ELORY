@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉLORÉ</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/84e18f9101.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2>ÉLORÉ</h2>
+        <nav>
+            <ul id="hide-header">
+                <li><a id="changeBackGround" href="home.html">HOME</a></li>
+                <li><a href="/PackgeNew/new.html">NEW</a></li>
+                <li><a href="#SHOP">SHOP</a></li>
+                <li><a href="/PackgeProducts/products.html">PRODUCTS</a></li>
+                <li><a href="/packgeContact/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <input type="search" id="search" placeholder="search">
+        <div class="header-icon">
+            <i onclick="SearchHeader()" class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i onclick="navigationBuy()" class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </header>
+    <main>
+    <section class="hero-section">
+            <video autoplay muted loop playsinline class="hero-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section class="HeroNav">
+        <div class="hero-nav">
+            <div class="Secure">
+                <i class="fa-solid fa-lock"></i>
+                <h5>Secure Checkout</h5>
+            </div>
+            <div class="Shipping">
+                <i class="fa-solid fa-box"></i>
+                <h5>Free Shipping</h5>
+            </div>
+            <div class="Returns">
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+                <h5>Free Returns</h5>
+            </div>
+            <div class="Guarantee">
+                <i class="fa-solid fa-star"></i>
+                <h5>Warranty and Guarantee</h5>
+            </div>
+        </div>
+    </section>
+    <section class="BESTSELLERS">
+        <div class="TITLES-BESTSELLERS">
+                <h2>BESTSELLERS</h2>
+            <button onclick="navigationbtn()">VIEW ALL</button>
+        </div>
+        <div class="containers-bestsellers">
+            <div class="box1-bestsellers">
+                <img src="/ProductsImg/Dress1.png" alt="" class="img1">
+                <img src="/ProductsImg/Back1.png" alt="" class="img2">
+                <h3>Navy Blue</h3>
+            </div>
+            <div class="box2-bestsellers">
+                <img src="/ProductsImg/Dress2.png" alt="" class="img1">
+                <img src="/ProductsImg/Back2.png" alt="" class="img2">
+                <h3>Francoise | Blush</h3>
+            </div>
+            <div class="box3-bestsellers">
+                <img src="/ProductsImg/Dress4.png" alt="" class="img1">
+                <img src="/ProductsImg/Back4.png" alt="" class="img2">
+                <h3>Halter Deep V</h3>
+            </div>
+            <div class="box4-bestsellers">
+                <img src="/ProductsImg/Dress5.jpg" alt="" class="img1">
+                <img src="/ProductsImg/Back5.png" alt="" class="img2">
+                <h3>Audrey Dress</h3>
+            </div>
+            <div class="box5-bestsellers">
+                <img src="/ProductsImg/Dress6.png" alt="" class="img1">
+                <img src="/ProductsImg/Back6.png" alt="" class="img2">
+                <h3>Navy Blue</h3>
+            </div>
+            <div class="box6-bestsellers">
+                <img src="/ProductsImg/Dress7.png" alt="" class="img1">
+                <img src="/ProductsImg/Back7.png" alt="" class="img2">
+                <h3>Elegant Ruffle</h3>
+            </div>
+        </div>
+    </section>
+    <section class="catogry-secion">
+        <div class="parent-img">
+                <h2>NEW<span>COLLECTION</span> </h2>
+            <img name="parent" src="/ProductsImg/photocatogry3.png" alt="">
+            </div>
+            <div class="box-catogry-imgs">
+                <img onclick="navigationNew()" onmouseenter="parent.src = this.src" src="/ProductsImg/photocatogry.png" alt="">
+                <img onclick="navigationNew()" onmouseenter="parent.src = this.src" src="/ProductsImg/photocatogry2.png" alt="">
+                <img onclick="navigationNew()" onmouseenter="parent.src = this.src" src="/ProductsImg/photocatogry3.png" alt="">
+                <img onclick="navigationNew()" onmouseenter="parent.src = this.src" src="/ProductsImg/photocatogry4.png" alt="">
+            </div>
+    </section>
+    <br><br>
+    <section class="SHOP-DRESS" id="SHOP">
+        <h2 class="TITLE-SHOP-DRESS">SHOP DRESSES</h2>
+        <div class="CONTAINERS-SHOP-DRESS">
+            <div class="BOX1-CONTAINERS-SHOP-DRESS">
+                <img onclick="LONGSLEEVED()" src="/ProductsImg/LONG SLEEVED.png" alt="">
+                <h3>LONG SLEEVED</h3>
+            </div>
+            <div class="BOX2-CONTAINERS-SHOP-DRESS">
+                <img onclick="STRAPLESS()" src="/ProductsImg/STRAPLESS.png" alt="">
+                <h3>STRAPLESS</h3>
+            </div>
+            <div class="BOX3-CONTAINERS-SHOP-DRESS">
+                <img onclick="ONESHOULDER()" src="/ProductsImg/ONE SHOULDER.png" alt="">
+                <h3>ONE SHOULDER</h3>
+            </div>
+            <div class="BOX4-CONTAINERS-SHOP-DRESS">
+                <img onclick="OFFSHOULDER()" src="/ProductsImg/OFF SHOULDER.png" alt="">
+                <h3>OFF SHOULDER</h3>
+            </div>
+            <div class="BOX5-CONTAINERS-SHOP-DRESS">
+                <img onclick="JUMPSUITS()" src="/ProductsImg/JUMPSUIT.png" alt="">
+                <h3>JUMPSUITS</h3>
+            </div>
+        </div>
+    </section>
+    </main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>ÉLORÉ</h2>
+            <p>
+                Elegance in every detail.
+                Discover timeless fashion designed
+                to make every moment special.
+            </p>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h3>SHOP</h3>
+            <a href="#">New Collection</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">All Dresses</a>
+            <a href="#">Jumpsuits</a>
+        </div>
+        <div class="footer-links">
+            <h3>HELP</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="footer-newsletter">
+            <h3>STAY IN STYLE</h3>
+            <p>Subscribe to receive updates on new arrivals and exclusive offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" aria-label="Subscribe">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 ÉLORÉ. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>

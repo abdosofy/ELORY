@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    animation: change linear both;
+    animation-timeline: scroll();
+}
+@keyframes change {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.151);
+    }
+}
+header h2{
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 37px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-shadow: 6px 6px 20px white;
+}
+header nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 20px;
+}
+header li{
+    transition: 0.5s;
+}
+header li:hover{
+    transform: scale(1.2);
+}
+header a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.5s;
+}
+#changeBackGround{
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 4px 4px 20px white;
+    color: white;
+    text-shadow: 3px 3px 20px black;
+    border-radius: 20px;
+    padding: 7px;
+}
+header a:hover{
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 4px 4px 20px white;
+    color: white;
+    text-shadow: 3px 3px 20px black;
+    border-radius: 20px;
+    padding: 7px;
+}
+.header-icon{
+    display: flex;
+    gap: 19px;
+}
+.fa-magnifying-glass , .fa-user , .fa-bag-shopping{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fa-magnifying-glass:hover , .fa-user:hover , .fa-bag-shopping:hover{
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 4px 4px 40px white;
+    color: white;
+    text-shadow: 3px 3px 20px black;
+    border-radius: 30px;
+    padding: 12px;
+    transform: scale(1.2);
+}
+
+/* HERO-SECTION */
+
+.hero-section h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    font-family: 'Bebas Neue', 'Oswald', 'Montserrat', sans-serif; 
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 20px grey;
+}
+.hero1-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+}
+.hero1{
+    width: 40%;
+    height: 3px;
+    background-color: red;
+}
+.hero2{
+    width: 40%;
+    height: 3px;
+    background-color: black;
+}
+
+/* CONTAINERS-GALLARY */
+
+.CONTAINERS-GALLARY{
+    display: grid;
+    grid-template-columns: repeat(3 , 200px);
+    gap: 40px 20px;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.CONTAINERS-GALLARY img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+}
+.BOX-GALLARY{
+    position: relative;
+    display: inline-block;
+}
+.BOX-GALLARY .img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 30px;
+}
+.BOX-GALLARY .img2:hover{
+    opacity: 1;
+    border-radius: 20px;
+    box-shadow: 4px 4px 30px black;
+}
+.TITLE-GALLARY{
+    transform: scale(1.2);
+    position: relative;
+    left: 20px;
+    top: 8px;
+}
+.TITLE-GALLARY h4{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px 20px black;
+}
+.TITLE-GALLARY p{
+    font-weight: bold;
+    font-size: 14.6px;
+    padding-top: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 20px black ;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 65px 7% 20px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 45px;
+    padding-bottom: 50px;
+}
+
+.footer-brand h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-brand p,
+.footer-newsletter p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.9;
+    max-width: 280px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #c5a880;
+    transform: translateY(-4px);
+}
+
+.footer-links,
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links h3,
+.footer-newsletter h3 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 16px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.footer-newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.newsletter-form input::placeholder {
+    color: #999;
+}
+
+.newsletter-form button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    color: #c5a880;
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p,
+.footer-bottom-links a {
+    color: #888;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom-links a:hover {
+    color: #fff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        padding: 45px 6% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footer-brand,
+    .footer-newsletter {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* RESPONSIVE - TABLET */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    header nav ul {
+        gap: 18px;
+        padding: 10px;
+    }
+
+    header a {
+        font-size: 13px;
+    }
+
+    .header-icon {
+        gap: 12px;
+    }
+
+    .CONTAINERS-GALLARY {
+        grid-template-columns: repeat(3, 200px);
+        gap: 35px 15px;
+        justify-content: center;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+
+/* RESPONSIVE - MOBILE */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header h2 {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+
+    header nav {
+        order: 3;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        padding: 10px 0 5px;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+    .header-icon {
+        gap: 15px;
+    }
+
+    .fa-magnifying-glass,
+    .fa-user,
+    .fa-bag-shopping {
+        font-size: 14px;
+    }
+
+    /* HERO SECTION */
+
+    .hero-section h2 {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+    .hero1,
+    .hero2 {
+        width: 30%;
+    }
+
+    /* PRODUCT GRID */
+
+    .CONTAINERS-GALLARY {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 15px;
+        padding: 0 15px;
+        justify-content: stretch;
+        margin-top: 45px;
+    }
+
+    .BOX-GALLARY {
+        width: 100%;
+        min-width: 0;
+        display: block;
+    }
+
+    .CONTAINERS-GALLARY img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .BOX-GALLARY .img2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .TITLE-GALLARY {
+        transform: none;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .TITLE-GALLARY h4 {
+        font-size: 13px;
+        text-shadow: none;
+    }
+
+    .TITLE-GALLARY p {
+        font-size: 12px;
+        text-shadow: none;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 40px 6% 20px;
+        margin-top: 50px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+        padding-bottom: 30px;
+    }
+
+    .footer-brand,
+    .footer-newsletter {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand h2 {
+        font-size: 27px;
+    }
+
+    .footer-links h3,
+    .footer-newsletter h3 {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+        margin-bottom: 13px;
+    }
+
+    .footer-brand p,
+    .footer-newsletter p {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .CONTAINERS-GALLARY {
+        gap: 25px 10px;
+        padding: 0 10px;
+    }
+
+    header nav ul {
+        gap: 12px;
+    }
+
+    header a {
+        font-size: 11px;
+    }
+
+    .TITLE-GALLARY h4 {
+        font-size: 12px;
+    }
+
+    .TITLE-GALLARY p {
+        font-size: 11px;
+    }
+}
+

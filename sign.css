@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    background:
+        radial-gradient(circle at 15% 15%, #712cff66, transparent 32%),
+        radial-gradient(circle at 85% 85%, #00c8ff44, transparent 34%),
+        #090914;
+    animation: pageEnter .55s ease both;
+}
+
+.title,
+.Login,
+.inputs,
+.password-box,
+.socail-sign,
+.button {
+    width: min(100%, 520px);
+    padding-right: 38px;
+    padding-left: 38px;
+    background: #151522;
+}
+
+.title {
+    padding-top: 38px;
+    border: 1px solid #a855f755;
+    border-bottom: 0;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0 -15px 45px #8b35ff22;
+}
+
+.title h4 {
+    margin: 0 0 8px;
+    color: #c084fc;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: clamp(32px, 6vw, 40px);
+    line-height: 1.3;
+    background: linear-gradient(90deg, #fff, #c4b5fd, #67e8f9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.Login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 6px;
+    padding-bottom: 24px;
+    border-left: 1px solid #a855f755;
+    border-right: 1px solid #a855f755;
+}
+
+.Login p {
+    margin: 0;
+    color: #aaa8c1;
+    font-size: 16px;
+}
+
+.Login a {
+    color: #67e8f9;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.Login a:hover {
+    color: #c084fc;
+    text-decoration: underline;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    border-left: 1px solid #a855f755;
+    border-right: 1px solid #a855f755;
+}
+
+.inputs input,
+.password-box input {
+    width: 100%;
+    height: 60px;
+    padding: 0 17px;
+    border: 1px solid #45405f;
+    border-radius: 12px;
+    outline: none;
+    background: #0d0d18;
+    color: #fff;
+    font: inherit;
+    font-size: 16px;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.inputs input::placeholder,
+.password-box input::placeholder {
+    color: #85819f;
+}
+
+.inputs input:focus,
+.password-box input:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 4px #a855f733;
+}
+
+#email {
+    grid-column: 1 / -1;
+}
+
+.password-box {
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 18px;
+    border-left: 1px solid #a855f755;
+    border-right: 1px solid #a855f755;
+}
+
+.password-box input {
+    padding-right: 58px;
+}
+
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    transform: translateY(-50%);
+    padding: 8px;
+    border: 0;
+    background: transparent;
+    color: #c084fc;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.socail-sign {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    border-left: 1px solid #a855f755;
+    border-right: 1px solid #a855f755;
+}
+
+.socail-sign a {
+    padding: 13px 8px;
+    border: 1px solid #45405f;
+    border-radius: 11px;
+    background: #1d1b2c;
+    color: #e8e5f5;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.socail-sign a:hover {
+    transform: translateY(-3px);
+    border-color: #a855f7;
+    background: #29213d;
+    box-shadow: 0 7px 20px #a855f733;
+}
+
+.button {
+    display: flex;
+    gap: 14px;
+    padding-top: 4px;
+    padding-bottom: 38px;
+    border: 1px solid #a855f755;
+    border-top: 0;
+    border-radius: 0 0 24px 24px;
+}
+
+.button button {
+    min-height: 58px;
+    padding: 0 18px;
+    border: 1px solid #66508d;
+    border-radius: 12px;
+    background: #211b35;
+    color: #e9ddff;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.button button:hover {
+    transform: translateY(-2px);
+    border-color: #c084fc;
+    box-shadow: 0 7px 20px #a855f744;
+}
+
+#creat {
+    flex: 1;
+    border: 0;
+    background: linear-gradient(100deg, #7c3aed, #4f46e5, #0891b2);
+    color: white;
+    box-shadow: 0 8px 24px #7040ff55;
+}
+
+#creat:hover {
+    filter: brightness(1.12);
+    box-shadow: 0 10px 30px #8b5cf6aa;
+}
+
+body.page-leaving {
+    animation: pageLeave .35s ease forwards;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pageLeave {
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 520px) {
+    .title,
+    .Login,
+    .inputs,
+    .password-box,
+    .socail-sign,
+    .button {
+        padding-right: 22px;
+        padding-left: 22px;
+    }
+
+    .inputs {
+        grid-template-columns: 1fr;
+    }
+
+    #email {
+        grid-column: auto;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body,
+    body.page-leaving {
+        animation-duration: .01ms;
+    }
+}
